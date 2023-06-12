@@ -5,6 +5,7 @@ import Navbar from './components/navbar'
 import Hero from './components/Hero'
 import Trust from './components/Trust'
 import Footer from './components/Footer'
+import Blurb from './components/Blurb'
 
 
 
@@ -14,6 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Navbar/>
     <Hero/>
     <Trust/>
+    <Blurb/>
     <Footer/>
   </React.StrictMode>,
 )
