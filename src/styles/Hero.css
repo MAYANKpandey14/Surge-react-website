@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;900&family=Poppins:wght@100;200;300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ededed;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+.hero-text {
+  flex: 1;
+  margin: 5em;
+}
+.hero-text h1 {
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 80px;
+  color: #030303;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-text p {
+  margin: 1em auto;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+}
+.cta-btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin: 0.75em 0em;
+}
+
+.hero-try-btn {
+  padding: 12px 20px;
+  background-color: #3164f4;
+  border-radius: 12px;
+  border: #3164f4;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;}
+
+.hero-see-btn {
+  padding: 12px 25px;
+  background-color: transparent;
+  outline: none;
+  border-radius: 12px;
+  cursor: pointer;
+  border: 2px solid#030303;
+  color: #030303;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+}
+
+.hero-img {
+  margin: auto 5em;
+}
+.hero-img img {
+  flex: 1;
+  margin: 1.5em;
+  width: 550px;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+@media screen and (max-width: 750px) {
+  .hero-img{
+    display: none;
+  }
+  .hero-text{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin:1em;
+  }
+
+  .hero-text h1{
+    font-size: 2em;
+    line-height: 1.25;
+  }
+
+  .hero-text p{
+    font-size: 12px;
+  }
+
+  .hero-try-btn {
+    padding: 12px 0px;
+    width: 85px;
+    background-color: #3164f4;
+    border-radius: 12px;
+    border: #3164f4;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;  }
+  
+  .hero-see-btn {
+    padding: 12px auto;
+    background-color: transparent;
+    outline: none;
+    border-radius: 12px;
+    cursor: pointer;
+    border: 2px solid#030303;
+    color: #030303;
+    font-size: 10px;
+    font-family: "Inter", sans-serif;
+  }
+}

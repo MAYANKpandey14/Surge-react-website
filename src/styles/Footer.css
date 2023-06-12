@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;900&family=Poppins:wght@100;200;300;400;500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.footer{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 4em 8em;
+    gap: 12.5em;
+}
+.info h1{
+    font-family: 'Monsterrat',sans-serif;
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.info p{
+    font-family: 'Inter',sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5em;
+    color: #4F4F4F;
+    max-width: 300px;
+}
+
+.info span{
+    font-family: 'Poppins',sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #000000;
+    max-width: 300px;
+    display: block;
+    margin: 10px auto 
+}
+.links{
+    display: flex;
+    gap: 10em;
+    flex-flow: row wrap;
+
+}
+
+.links-item li{ 
+    margin: .75em auto;   
+}
+
+.links li, a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-family: 'Inter',sans-serif;
+    font-size: 16px;
+}
+/* Hover effect */
+
+
+.links-item ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+  }
+
+  /* .links-item ul li {
+    display: inline-block;
+  } */
+  .links-item a {
+    color: #000000;
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 8px;
+  }
+  .links-item a:before, a:after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #3164f4;
+  }
+  
+  .links-item a:before {
+    opacity: 0;
+    transform: translateY(- 8px);
+    transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
+  }
+
+  .links-item a:after {
+    opacity: 0;
+    transform: translateY(4px);
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+  }
+
+  .links-item a:hover:before, a:focus:before, a:hover:after, a:focus:after {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .links-item a:hover:before, a:focus:before {
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+  }
+
+  .links-item a:hover:after, a:focus:after {
+    transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s;
+  }
+
