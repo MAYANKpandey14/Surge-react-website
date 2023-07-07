@@ -20,9 +20,12 @@ body {
 }
 
 .blurb-main {
-    display: flex;
-    gap: 15em;
-  padding: 2em 6em;
+  display: flex;
+  padding: 2rem 4rem;
+  gap: 2em;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  flex-flow: column wrap;
   background-color: #ffffff;
   border-radius: 12px;
   box-shadow: rgba(26, 26, 27, 0.2) 0px 7px 29px 0px;
@@ -32,24 +35,15 @@ body {
   z-index: 1;
 }
 
-.blurb-main img{
-    width: 400px;
-    height: 400px;
-    border-radius: 12px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+.blurb-text >*{
+    margin: 0.75rem auto;
 }
 
 .blurb-text{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    max-width: 300px;
-    
+  max-width: 200px;
 }
 
-.blurb-text >*{
-    margin: 10px;
-}
+
 
 .blurb-bg {
   background-color: #ffffff;
@@ -62,16 +56,25 @@ body {
 }
 
 .blurb-step{
-    margin: 25px 0px;
+  margin-bottom: 5%;
 }
 
-.blurb-step hr{
-    width: 200px;
-    margin:5px 0px;
-    height: 2px;
-    background-color: #3164f4;
-    border: none;
+.blurb-steps{
+  margin: 1rem auto;
+  user-select: none;
+  width: 100%;
+  height: auto;
 }
+
+
+.blurb-step hr{
+  width: 200px;
+  background-color: #3164f4;
+  height: .5vh;
+  border-radius: 75% 75% 75% 25%;
+  border: none;
+}
+
 
 .blurb-step p{
     font-size: 12px;

@@ -22,7 +22,7 @@ function Blurb() {
                 </div>
                 <div className='blurb-step'>
                     <h1>Step 3</h1>
-                    <p>Poof! You are ready to work smart with optimized operations.</p><hr/>
+                    <p>Poof! You are ready to work smart with optimized operations Hello Mayank here.</p><hr/>
                 </div>
             </div>
         </div>
