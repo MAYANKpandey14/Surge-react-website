@@ -14,7 +14,7 @@ function Blurb() {
             <div className='blurb-steps'>
                 <div className='blurb-step'>
                     <h1>Step 1</h1>
-                    <p>Reach out to one of our specialists, and have short introduction session.</p><hr/>
+                    <p>Reach out to one of our specialists............... and have short introduction session.</p><hr/>
                 </div>
                 <div className='blurb-step'>
                     <h1>Step 2</h1>
